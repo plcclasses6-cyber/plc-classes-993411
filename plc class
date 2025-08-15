@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PLC — Pure Learning Classes by Bipin Kumar</title>
+  <meta name="description" content="Classes 6–12 • AI Teacher (Hindi) • Online classes after 1 PM • ₹100/month">
+  <style>
+    :root{--p:#2563eb;--a:#7c3aed;--bg:#f6f7fb;--tx:#0f172a;--mut:#64748b;--card:#fff}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--tx)}
+    header{background:linear-gradient(90deg,var(--p),var(--a));color:#fff;padding:22px 16px;text-align:center}
+    header h1{margin:0 0 6px} .pill{display:inline-block;background:#ffffff22;border:1px solid #ffffff55;border-radius:999px;padding:6px 10px;font-size:13px}
+    .wrap{max-width:980px;margin:16px auto;padding:0 12px}
+    .grid{display:grid;gap:16px} @media(min-width:820px){.g2{grid-template-columns:1.2fr .8fr}}
+    .card{background:var(--card);border-radius:14px;padding:16px;box-shadow:0 6px 20px rgba(2,8,23,.06)}
+    .btn{background:var(--p);color:#fff;border:none;border-radius:8px;padding:10px 14px;cursor:pointer;text-decoration:none;display:inline-block}
+    .btn.dark{background:#111827} .tag{display:inline-block;background:#eef2ff;border:1px solid #dbeafe;color:#1e40af;border-radius:999px;padding:4px 8px;margin:4px 6px 0 0}
+    h2{margin:0 0 10px} .note{color:var(--mut);font-size:13px} .mono{font-family:ui-monospace,Consolas,monospace}
+    table{width:100%;border-collapse:collapse;margin-top:8px} th,td{border:1px solid #e5e7eb;padding:8px;text-align:center} th{background:#f8fafc}
+    input,select,textarea{width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:8px;margin-top:6px}
+    .ok{padding-left:18px;margin:8px 0} .ok li{margin:6px 0}
+    .msg{margin-top:10px;padding:8px;border-radius:8px} .good{background:#ecfdf5;color:#065f46;border:1px solid #d1fae5}
+    .bad{background:#fef2f2;color:#991b1b;border:1px solid #fee2e2}
+    .qr{width:240px;max-width:65vw;border-radius:12px;border:1px solid #e5e7eb}
+    footer{text-align:center;padding:18px;color:#475569}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="pill">PLC • Pure Learning Classes</span>
+    <h1>Classes 6–12 • ₹100 / month</h1>
+    <p>AI Teacher (Hindi), live online classes after 1 PM • Sunday doubt clearing: 7:00 AM – 4:00 PM</p>
+    <div style="margin-top:10px">
+      <a href="#enroll" class="btn">Enroll Now</a>
+      <a href="#payment" class="btn dark">Pay ₹100</a>
+    </div>
+    <div style="margin-top:10px">
+      <span class="tag">Science</span><span class="tag">Math</span><span class="tag">English</span>
+      <span class="tag">Social Science</span><span class="tag">Hindi</span><span class="tag">Reasoning</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="grid g2">
+    <section class="card">
+      <h2>Why choose PLC?</h2>
+      <ul class="ok">
+        <li>Clear explanations with bilingual support (Hindi/English)</li>
+        <li>AI Teacher gives step-by-step help in Hindi (demo)</li>
+        <li>Regular online classes after <b>1 PM</b> + Sunday doubt clearing</li>
+        <li>Only ₹100 per month — affordable for everyone</li>
+      </ul>
+      <p class="note">This is an offline single-file version. For auto payment/SMS, add a backend later.</p>
+    </section>
+
+    <section class="card">
+      <h2>Quick Links</h2>
+      <p><a class="btn" href="#routine">View Routine</a>
+         <a class="btn" href="#enroll">Admission Form</a>
+         <a class="btn" href="#payment">UPI Payment</a></p>
+      <p class="note">Contact (WhatsApp): <b class="mono">‪+91 9708322445‬</b> / <b class="mono">‪+91 7079003446‬</b></p>
+    </section>
+  </div>
+
+  <section id="routine" class="card">
+    <h2>Weekly Class Routine (Classes 6–12)</h2>
+    <table>
+      <thead><tr><th>Day</th><th>Subject</th><th>Time</th></tr></thead>
+      <tbody>
+        <tr><td>Monday</td><td>Science</td><td>1:30 PM</td></tr>
+        <tr><td>Tuesday</td><td>Mathematics</td><td>2:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>English</td><td>3:00 PM</td></tr>
+        <tr><td>Thursday</td><td>Social Science</td><td>1:30 PM</td></tr>
+        <tr><td>Friday</td><td>Hindi</td><td>2:00 PM</td></tr>
+        <tr><td>Saturday</td><td>Revision</td><td>1:30 PM</td></tr>
+        <tr><td>Sunday</td><td>Doubt Clearing</td><td>7:00 AM – 4:00 PM</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Live class links will be shared before each session.</p>
+  </section>
+
+  <section id="enroll" class="card">
+    <h2>Admission Form</h2>
+    <form onsubmit="return saveEnroll(event)">
+      <label>Full Name</label>
+      <input id="name" required placeholder="Student name">
+      <label>Class</label>
+      <select id="cls" required>
+        <option value="">Select class</option>
+        <option>6</option><option>7</option><option>8</option>
+        <option>9</option><option>10</option><option>11</option><option>12</option>
+      </select>
+      <label>Mobile (WhatsApp)</label>
+      <input id="mob" required placeholder="+91XXXXXXXXXX">
+      <label>Note (optional)</label>
+      <textarea id="note" rows="3" placeholder="Write your doubt or preference"></textarea>
+      <button class="btn" type="submit" style="margin-top:10px">Submit</button>
+      <div id="msg" class="msg" style="display:none"></div>
+    </form>
+    <p class="note">This saves locally in your browser (demo).</p>
+  </section>
+
+  <section id="payment" class="card" style="text-align:center">
+    <h2>Pay ₹100 / month</h2>
+    <p>Scan the QR with any UPI app:</p>
+    <!-- Put your image in the same folder with this exact name -->
+    <img class="qr" src="qr-code.png" alt="UPI QR">
+    <p class="note">Or tap the UPI link (works on mobile):</p>
+    <p><a class="btn" href="upi://pay?pa=9708322445@paytm&pn=PLC%20Classes&am=100&cu=INR&tn=Monthly%20fee" target="_blank">Pay via UPI App</a></p>
+    <p>Payment to mobile: <b class="mono">9708322445</b></p>
+  </section>
+
+  <section class="card">
+    <h2>AI Teacher (Hindi) — Info</h2>
+    <p>AI will explain concepts in simple Hindi. This offline version is a demo; full chat needs a backend later.</p>
+    <p class="good msg">Tip: Ask like — <span class="mono">“Class 9, Motion: difference between speed & velocity with examples (Hindi)”</span></p>
+  </section>
+</main>
+
+<footer>© PLC — Pure Learning Classes by Bipin Kumar</footer>
+
+<script>
+  function saveEnroll(e){
+    e.preventDefault();
+    const name=document.getElementById('name').value.trim();
+    const cls=document.getElementById('cls').value;
+    const mob=document.getElementById('mob').value.trim();
+    const note=document.getElementById('note').value.trim();
+    if(!name||!cls||!mob){ show('Please fill all required fields.', true); return false; }
+    const key='plc_enrollments';
+    const arr=JSON.parse(localStorage.getItem(key)||'[]');
+    arr.push({id:Date.now(),name,cls,mob,note});
+    localStorage.setItem(key,JSON.stringify(arr));
+    show('✅ Enrollment saved (local). Please pay ₹100 via QR/UPI and confirm on WhatsApp.', false);
+    e.target.reset(); return false;
+  }
+  function show(t,err){
+    const m=document.getElementById('msg'); m.style.display='block';
+    m.className='msg '+(err?'bad':'good'); m.textContent=t;
+  }
+</script>
+</body>
+</html>
